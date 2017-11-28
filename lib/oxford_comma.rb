@@ -4,7 +4,8 @@ def oxford_comma(array)
   elsif array.length == 2
     return array.join(" and ")
   elsif array.length > 2
-    array[0...-1].join(", ") << ", and #{array[-1]}"
-    #array.each_with_index {|word,index|
+    array[0...-1].join(", ") << ", and #{array[-1]}" 
+    # selects all elements from array but the last one to join with ,
+    # includes , and final element of array 
   end
 end
