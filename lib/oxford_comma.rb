@@ -1,4 +1,4 @@
 def oxford_comma(array)
 
-  array.last array.pop "and"
+  array.last.join "and"
 end
